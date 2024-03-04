@@ -1,0 +1,138 @@
+header,
+main,
+footer {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #ececec;
+}
+
+body .container-fluid {
+	color: #333;
+	font-family: 'Sans-serif', 'Sans-serif';
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+
+footer {
+	text-align: center;
+}
+footer p {
+	margin: 0;
+	color: #e6e6e6;
+}
+footer a {
+	text-decoration: none;
+	color: #e6e6e6;
+}
+
+a {
+	text-decoration: none;
+	color: #0ea3bf;
+}
+
+/* Top Header Format */
+#top-header, footer{
+	background-color: #3f3f3f;
+	margin: 0;
+	font-size: small;
+}
+#top-header{
+	display: none;
+	padding-right: 1em;
+	padding-top: 0;
+}
+#contact ul{
+	padding: 0;
+	margin: 0;
+}
+#contact li {
+	list-style-type: none;
+}
+/* End Top-Header Formatting */
+
+#side-info li {
+	list-style-type: none;
+}
+#side-info h3 {
+	color: #e6e6e6;
+	background-color: #00a5be;
+}
+#side-info {
+	background: #e4e4e4;
+	width: 100%;
+}
+#main-content {
+	width: 100%;
+}
+
+.content-info p{
+	margin-bottom: 0.25em;
+}
+
+.content-header {
+	color: #00a5be;
+	border-bottom: 2px #00a5be solid;
+}
+
+.content-description, .job-title {
+	color: #858585;
+}
+
+.employer, .skill-category {
+	color: #017a8d;	
+}
+
+.skill-list li, .current-schedule {
+	border-left: 2px #017a8d solid;
+	list-style: none;
+	background-color: #abd8e0;
+	border-radius: 5px;
+}
+
+/* Tablet Media Break */
+@media only screen and (min-width: 768px) {
+    /* Top-Header Formatting */
+    #top-header{
+		display: flex;
+		justify-content: space-between;
+	}
+
+    #contact {
+		font-size: 0.75em;
+		font-weight: 600;
+	}
+    
+    #contact a {
+		padding: 5px;
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+    #contact ul{
+		display: flex;
+	}
+    /* End Top-Header Formatting */
+
+	#side-info {
+		width: 30%;
+	}
+	#main-content {
+		width: 70%;
+	}
+}
+
+/* Desktop Media Break */
+@media only screen and (min-width: 1024px) {
+	#side-info {
+		width: 25%;
+	}
+	#main-content {
+		width: 75%;
+	}
+}
